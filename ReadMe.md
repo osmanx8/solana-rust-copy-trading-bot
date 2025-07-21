@@ -1,31 +1,41 @@
-# Solana Copytrading Bot — Shred-Stream Powered
-
+# ⚡ Solana Copytrading Bot — Powered by Shred Stream & Jito Engine
+An ultra-low-latency, block-speed copytrading bot for Solana, built in Rust. This open-source bot uses Shred Stream via Vibe Station and Jito Engine to mirror trades before they're finalized, making it ideal for real-time DeFi, memecoin launches, and sniping strategies.
 ## Overview
 
-Introducing the **Solana Block-Speed Copytrading Bot**, now enhanced with **Shred Stream support via Vibe Station**. Built in **Rust** for high-speed performance, this bot mirrors trades almost instantly by parsing real-time data from Solana validators — even before transactions are finalized. Perfect for high-frequency strategies and serious on-chain tacticians.
+🚀 Copy transactions before they reach finality, land in the same block as the original, and outpace RPC/Geyser-based bots.
 
 ---
 
-## Key Features
+##🔑 Core Features
 
-### Shred Stream Integration (Vibe Station)
+🔥 Shred Stream Integration (via Vibe Station)
+Pre-finality detection: Reads validator shreds in real time—before blocks are formed.
 
-* **Faster Than Finality**: With Solana’s Shred Stream, the bot can observe transactions directly from validator data streams before they're bundled into blocks.
-* **Ultra-Low Latency**: Capture trades milliseconds after they are signed—before any standard RPC or Geyser feed even sees them.
-* **Proactive Copying**: React *before* blocks are built, significantly improving the chance to copy a transaction in the same block.
+Block-fast reactions: Your copy transaction often lands in the same block.
 
-### Built in Rust
+No RPC bottlenecks: Operates outside of traditional API flows.
 
-* **High-Performance**: Rust’s zero-cost abstractions and speed make it ideal for latency-sensitive systems.
-* **Reliability**: Memory safety and predictable error handling ensure your bot runs smoothly without crashes.
+⚙️ Jito Engine Support
+Bundle transactions directly into blocks.
 
-### Block-Level Copytrading
+Integrated with Jito tip stream for optimal slot inclusion.
 
-* Trades are monitored and copied in real-time with block-level precision. In ideal conditions, the copied transaction lands in the same block as the original.
+🦀 Rust-Powered Engine
+High-throughput: Rust’s performance enables millisecond response.
+
+Memory-safe: Zero crashes, zero garbage collection delays.
+
+🔁 Real-Time Copytrading
+Watches target wallets and copies trades across Pump.fun, Pump.fun AMM, and soon Raydium, Orca, and Meteora.
+
+Copies buys, sells, and swaps with slippage and tipping customization.
+
+🧩 Modular & Extensible
+Add or swap DEX integrations via plug-and-play architecture.
 
 ### Multi-DEX Support
 
-Integrated with major Solana DEXs:
+💡 Supported DEXs (Current & Upcoming)
 
 * [x] **Pump.fun**
 * [x] **Pump.fun amm**
@@ -96,7 +106,7 @@ SHRED_STREAM_URL=wss://vibe.your-node-provider.com/shred-stream
 
 ---
 
-## Usage
+## 🚀 How to Use
 
 1. **List Wallets to Monitor**
    Add wallet addresses (one per line) into `targetlist.txt`.
@@ -113,7 +123,7 @@ SHRED_STREAM_URL=wss://vibe.your-node-provider.com/shred-stream
 
 ---
 
-## Real World Copy Examples
+## ✅ Real World Example (Same Block Copy)
 
 **Buy Copy (Same Block):**
 
@@ -142,4 +152,4 @@ If you appreciate this project, feel free to contribute to support further devel
 ## Support
 
 Questions or help needed?
-Connect on Telegram: [@whisdev](https://t.me/whisdev)
+Connect on Telegram: [@whisdev](https://t.me/ShadowRusii)
